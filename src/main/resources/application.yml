@@ -1,0 +1,23 @@
+server:
+  port: 3088
+
+spring:
+
+    datasource:
+         url: jdbc:mysql://localhost:3306/livraria?useUnicode=yes&serverTimezone=UTC&characterEncoding=UTF-8
+         username: root
+         password: Fiap1234
+         initialization-mode: always
+
+    jpa:
+        hibernate:
+          ddl-auto: create
+          show-sql: true
+          format_sql: true
+
+
+
+
+
+
+
