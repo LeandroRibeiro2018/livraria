@@ -5,6 +5,7 @@ import br.com.fiap.livraria.models.dto.LivroDTO;
 import br.com.fiap.livraria.models.dto.UpdatePrecoLivroDTO;
 import br.com.fiap.livraria.service.LivroService;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -18,8 +19,10 @@ public class LivroController {
 
     private LivroService livroService;
 
+
     public LivroController(LivroService livroService){
         this.livroService = livroService;
+
     }
 
     @GetMapping
@@ -104,5 +107,11 @@ public class LivroController {
         return livroDTO;
     }
 
+    @DeleteMapping("{id}")
+     public ResponseEntity<?> delete(@PathVariable int id){
+
+       livroService.delete(id);
+        return ResponseEntity.ok("Livro Excluido com sucesso");
+    }
 
 }

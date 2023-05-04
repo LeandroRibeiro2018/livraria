@@ -78,8 +78,9 @@ private final LivroRepository livroRepository;
     }
 
     @Override
-    public void delete(int id) {
+    public Livro delete(int id) {
         Livro livro = findLivroById(id);
         livroRepository.delete(livro);
+        return livro;
     }
 }
