@@ -1,9 +1,9 @@
 package br.com.fiap.livraria.service.impl;
 
 import br.com.fiap.livraria.models.entity.Livro;
-import br.com.fiap.livraria.models.dto.CreateUpdateLivroDTO;
-import br.com.fiap.livraria.models.dto.LivroDTO;
-import br.com.fiap.livraria.models.dto.UpdatePrecoLivroDTO;
+import br.com.fiap.livraria.controller.dto.CreateUpdateLivroDTO;
+import br.com.fiap.livraria.controller.dto.LivroDTO;
+import br.com.fiap.livraria.controller.dto.UpdatePrecoLivroDTO;
 import br.com.fiap.livraria.repository.LivroRepository;
 import br.com.fiap.livraria.service.LivroService;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package br.com.fiap.livraria.models.dto;
+package br.com.fiap.livraria.controller.dto;
 
 
 import lombok.Data;

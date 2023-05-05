@@ -1,6 +1,6 @@
 package br.com.fiap.livraria.models.entity;
 
-import br.com.fiap.livraria.models.dto.CreateUpdateLivroDTO;
+import br.com.fiap.livraria.controller.dto.CreateUpdateLivroDTO;
 import lombok.Data;
 
 
